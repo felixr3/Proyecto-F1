@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+:root {
+
+/*Colores */
+
+    --color-principal: #E7473C;
+    --color-texto: #fff;
+    --otro-color: #F0F0F0;
+    --color-secundario: #F0F0F0;
+    --background: #111;
+
+/* Tamaño Letras */
+    
+    --tamaño-texto: 4.5rem;
+    --tamaño-h2: 2.6rem;
+    --parrafos: 1.1rem; 
+}
+
+body {
+    background: var(--background);
+    color: var(--color-texto);
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 15%;
+    transition: all 0.5 ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--color-texto);
+    font-size: 33px;
+    font-weight: 750;
+}
+
+.logo i{
+    vertical-align: middle;
+    margin: 8px;
+    color: var(--color-principal);
+}
+
+.navegacion { 
+    display: flex;
+}
+
+.navegacion a {
+    color: var(--color-texto);
+    font-size: var(--parrafos);
+    font-weight: 600;
+    margin: 0 30px;
+    transform: all 0.5s ease;
+}
+
+.navegacion a:hover{
+    color: var(--color-principal);
+}
+
+.navegacion a.activo{
+    color: var(--color-principal);    
+}
+
+.iconos-nav{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: var(--color-principal);
+    border-radius: 3rem;
+    box-shadow: var(--color-principal);
+}
+
+.iconos-nav i{
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--background);
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.5 ease;
+}
+
+#menu-icon {
+    font-size: 32px;
+    color: var(--background);
+    z-index: 100001;
+    cursor: pointer;
+    display: none;   
+}
+
+.iconos-nav i:hover {
+    transform: scale(1.1);
+    color: var(--color-texto);
+}
