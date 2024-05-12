@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F1 Circuitos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/f1-icono.png">
+
+
+
     <link rel="stylesheet" href="style.css">
     <!-- Iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Fonts -->
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
+
+
 </head>
+
 <body>
     <header>
         <a href="#" class="logo"><i class="bx bx-home"></i>Formula 1 Argentina</a>
 
         <ul class="navegacion">
-            <li><a href="#" class="activo">Home</a></li>
-            <li><a href="#">Circuitos</a></li>
-            <li><a href="#">Pilotos</a></li>
-            <li><a href="#">Firmas</a></li> 
+            <li><a href="main.html">Home</a></li>
+            <li><a href="" class="activo">Circuitos</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="firmas.html">Firmas</a></li>
         </ul>
 
         <div class="iconos-nav">
@@ -28,14 +38,41 @@
 
     <!-- Home -->
     <section class="home" id="home">
-        <div class="texto">
-            <h1></h1>
+        <div class="container">
+            <div class="col-5">
+                <!--de aca saque la imagen del circuito
+                https://www.dazn.com/es-ES/news/motor/donde-esta-bahrein-como-es-circuito-f1/1evcsy9h1ifrr1hswnl1ggb6z7
+            -->
+                <div class="col-6">
+                    <img style="max-width: 100%; height: auto;" class="imagen" src="imagenes/img-circuitos/bahrain.jpg"
+                        alt="bahrain">
+                </div>
+                <div class="col-4">
+                    
+                    Primer Gran Premio: 2004
+                    Número de vueltas: 57
+                    Longitud del circuito: 5.412km
+                    Distancia de carrera: 308.238 km
+                    Récord de vuelta: 1:31.447 Pedro de la Rosa (2005)
+                </div>
+
+            </div>
+            <div class="col-5">
+                <div class="col-6">
+                    <img style="max-width: 100%; height: auto;" class="imagen" src="imagenes/img-circuitos/bahrain.jpg"
+                        alt="bahrain">
+                </div>
+                <div class="col-4">cddccdsds
+
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Scripts -->
     <script src="script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
+
 </body>
+
 </html>
