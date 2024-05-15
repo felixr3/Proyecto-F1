@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@
 
 :root {
 
-/*Colores */
+    /*Colores */
 
     --color-principal: #E7473C;
     --color-texto: #fff;
@@ -20,11 +19,11 @@
     --color-secundario: #F0F0F0;
     --background: #111;
 
-/* Tamaño Letras */
-    
+    /* Tamaño Letras */
+
     --tamaño-grande: 4.5rem;
     --tamaño-h2: 2.6rem;
-    --parrafos: 1.1rem; 
+    --parrafos: 1.1rem;
 }
 
 body {
@@ -39,7 +38,7 @@ header {
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 100; 
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,13 +55,13 @@ header {
     font-weight: 750;
 }
 
-.logo i{
+.logo i {
     vertical-align: middle;
     margin: 8px;
     color: var(--color-principal);
 }
 
-.navegacion { 
+.navegacion {
     display: flex;
 }
 
@@ -74,15 +73,15 @@ header {
     transform: all 0.5s ease;
 }
 
-.navegacion a:hover{
+.navegacion a:hover {
     color: var(--color-principal);
 }
 
-.navegacion a.activo{
-    color: var(--color-principal);    
+.navegacion a.activo {
+    color: var(--color-principal);
 }
 
-.iconos-nav{
+.iconos-nav {
     display: flex;
     align-items: center;
     padding: 8px 15px;
@@ -91,7 +90,7 @@ header {
     box-shadow: var(--color-principal);
 }
 
-.iconos-nav i{
+.iconos-nav i {
     vertical-align: middle;
     font-size: 25px;
     color: var(--background);
@@ -105,7 +104,7 @@ header {
     color: var(--background);
     z-index: 100001;
     cursor: pointer;
-    display: none;   
+    display: none;
 }
 
 .iconos-nav i:hover {
@@ -114,7 +113,7 @@ header {
 }
 
 header.sticky {
-    padding: 12px, 14%; 
+    padding: 12px, 14%;
     background: var(--otro-color);
 }
 
@@ -134,14 +133,60 @@ section {
     gap: 2rem;
 }
 
-.imagen img{
+.imagen img {
     width: 100%;
     height: auto;
 }
 
-.texto h1{
+.texto h1 {
     font-size: var(--tamaño-grande);
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 3rem;
+}
+
+.col-5 {
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+.col-6 {
+    width: 60%;
+    display: flex;
+}
+
+.col-4 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.row {
+    margin-top: 50px;
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+}
+
+.row:first-child {
+    margin-top: 140px;
+}
+
+.imagen {
+    transition: transform 0.3s ease;
+    /* Agrega una transiciÃ³n suave al efecto */
+}
+
+.imagen:hover {
+    transform: scale(1.5);
+    /* Aumenta el tamaÃ±o de la imagen al 150% al pasar el mouse sobre ella */
+}
+
+.img-circuitos {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 2px;
 }
