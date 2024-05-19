@@ -99,7 +99,7 @@ header {
     transition: all 0.5 ease;
 }
 
-#menu-icon {
+#menu-icono {
     font-size: 32px;
     color: var(--background);
     z-index: 100001;
@@ -204,6 +204,7 @@ footer {
     transition: all 0.5 ease;
     background: var(--otro-color);
 }
+
 
 /* query para tablet */
 @media (max-width:800px) {

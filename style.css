@@ -99,7 +99,7 @@ header {
     transition: all 0.5 ease;
 }
 
-#menu-icon {
+#menu-icono {
     font-size: 32px;
     color: var(--background);
     z-index: 100001;
@@ -120,7 +120,7 @@ header.sticky {
 /* Home */
 
 section {
-    padding: 70px 17% 60px;
+    padding: 70px 10% 10px;
 }
 
 .home {
@@ -133,7 +133,7 @@ section {
     gap: 2rem;
 }
 
-.imagen img {
+.h-imagen img {
     width: 100%;
     height: auto;
 }
@@ -142,11 +142,11 @@ section {
     font-size: var(--tamaño-grande);
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 3rem;
+    margin-bottom: 10px;
 }
 
 .container {
-    padding: 30px 14% 70px;
+    padding: 30px 5% 70px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
@@ -252,12 +252,12 @@ section {
 
 .imagen {
     transition: transform 0.3s ease;
-    /* Agrega una transiciÃ³n suave al efecto */
+    /* Agrega una transicion suave al efecto */
 }
 
 .imagen:hover {
     transform: scale(1.5);
-    /* Aumenta el tamaÃ±o de la imagen al 150% al pasar el mouse sobre ella */
+    /* Aumenta el tamaño de la imagen al 150% al pasar el mouse sobre ella */
 }
 
 .img-circuitos {
@@ -271,7 +271,7 @@ section {
 
 footer {
 
-    margin-top: 30px;
+    margin-top: 40px;
     width: 100%;
     top: 0;
     right: 0;
@@ -284,3 +284,63 @@ footer {
     transition: all 0.5 ease;
     background: var(--otro-color);
 }
+
+
+/* Responsive Home */
+
+
+@media (max-width: 1076px) {
+    #menu-icono {
+      display: initial;  
+    }
+    header .navegacion {
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--otro-color);
+        transition: all 0.5s ease;
+    }
+    header .navegacion a{
+        display: block;
+        padding: 8px;
+        margin: 16px;
+        border-left: 2px solid var(--color-principal);
+    }
+    .navegacion.open{
+        top: 100%
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .home {
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    .texto {
+        padding-top: 60px;
+    }
+    .h-imagen {
+        text-align: center;
+    }
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+    .sobre-foto {
+        text-align: center;
+    }
+}
+
+@media (max-width: 495px){
+    :root {
+        --tamaño-grande: 44px;
+        --tamaño-h2: 32px;
+    }
+}
+
+
