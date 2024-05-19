@@ -208,6 +208,13 @@ footer {
 
 /* query para tablet */
 @media (max-width:800px) {
+    .txt-desc-pilotos {
+        font-size: 10px;
+    }
+
+    .img-pilotos {
+        height: 140px;
+    }
 
     h4 {
         font-size: 14px;
@@ -224,6 +231,19 @@ footer {
 
 /* query para celulares */
 @media (max-width:600px) {
+    .col-5:nth-child(even) {
+        margin-top: 15px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .img-pilotos {
+        height: 110px;
+    }
+
     h4 {
         font-size: 12px;
     }
