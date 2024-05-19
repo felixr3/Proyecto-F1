@@ -21,7 +21,7 @@
 
     /* Tamaño Letras */
 
-    --tamaño-grande: 4.5rem;
+    --tamaño-grande: 3.5rem;
     --tamaño-h2: 2.6rem;
     --parrafos: 1.1rem;
 }
@@ -206,6 +206,7 @@ section {
 .sobre-foto img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
 }
 
 .sobre-texto h2{
@@ -285,6 +286,45 @@ footer {
     background: var(--otro-color);
 }
 
+/* Formulario */
+
+.container-form {
+    padding: 150px 5% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 72px;
+    text-align: center;
+}
+
+.container-form img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+input {
+    display: inline-block;
+    padding: 5px 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: var(--otro-color);
+    color: var(--color-principal);
+    font-size: var(--parrafos);
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+textarea {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: var(--otro-color);
+    color: var(--color-principal);
+    font-size: var(--parrafos);
+    font-weight: 400;
+    border-radius: 10px;
+}
 
 /* Responsive Home */
 
@@ -314,8 +354,6 @@ footer {
         top: 100%
     }
 }
-
-
 
 @media (max-width: 900px) {
     .home {
