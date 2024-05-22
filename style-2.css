@@ -21,7 +21,7 @@
 
     /* Tamaño Letras */
 
-    --tamaño-grande: 4.5rem;
+    --tamaño-grande: 3.5rem;
     --tamaño-h2: 2.6rem;
     --parrafos: 1.1rem;
 }
@@ -118,7 +118,6 @@ header.sticky {
 }
 
 /* Home */
-
 
 
 .home {
@@ -226,6 +225,34 @@ footer {
 
     .navegacion a {
         font-size: 14px;
+    }
+
+    /*ssssssssss */
+    #menu-icono {
+        display: initial;
+    }
+
+    header .navegacion {
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--otro-color);
+        transition: all 0.5s ease;
+    }
+
+    header .navegacion a {
+        display: block;
+        padding: 8px;
+        margin: 16px;
+        border-left: 2px solid var(--color-principal);
+    }
+
+    .navegacion.open {
+        top: 100%
     }
 }
 
